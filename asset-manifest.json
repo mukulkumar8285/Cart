@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/Cart/static/css/main.6e350f17.css",
-    "main.js": "/Cart/static/js/main.a1d3b265.js",
-    "static/js/453.b2482a81.chunk.js": "/Cart/static/js/453.b2482a81.chunk.js",
-    "index.html": "/Cart/index.html",
-    "main.6e350f17.css.map": "/Cart/static/css/main.6e350f17.css.map",
-    "main.a1d3b265.js.map": "/Cart/static/js/main.a1d3b265.js.map",
-    "453.b2482a81.chunk.js.map": "/Cart/static/js/453.b2482a81.chunk.js.map"
+    "main.css": "/-Restaurant/static/css/main.a62a5e45.css",
+    "main.js": "/-Restaurant/static/js/main.07a6f679.js",
+    "static/js/453.a567f766.chunk.js": "/-Restaurant/static/js/453.a567f766.chunk.js",
+    "static/media/logo.svg": "/-Restaurant/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/-Restaurant/index.html",
+    "main.a62a5e45.css.map": "/-Restaurant/static/css/main.a62a5e45.css.map",
+    "main.07a6f679.js.map": "/-Restaurant/static/js/main.07a6f679.js.map",
+    "453.a567f766.chunk.js.map": "/-Restaurant/static/js/453.a567f766.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6e350f17.css",
-    "static/js/main.a1d3b265.js"
+    "static/css/main.a62a5e45.css",
+    "static/js/main.07a6f679.js"
   ]
 }
