@@ -2,15 +2,39 @@
     "version": 2,
     "builds": [
       {
-        "src": "server.js",
+        "src": "*.js",
         "use": "@vercel/node"
       }
     ],
     "routes": [
       {
-        "src": "/(.*)",
-        "dest": "/server.js"
+        "src": "/auth/register",
+        "dest": "/"
+      },
+      {
+        "src": "/auth/login",
+        "dest": "/"
+      },
+      {
+        "src": "/auth/logout",
+        "dest": "/"
+      },
+      {
+        "src": "/api/items/",
+        "dest": "/"
+      },
+      {
+        "src": "/api/items/add-to-cart",
+        "dest": "/"
+
+      },
+      {
+         "src": "/api/items/sub-to-cart",
+         "dest": "/"
+      },
+      {
+        "src": "/api/items/cart",
+        "dest": "/"
       }
     ]
   }
-  
