@@ -26,7 +26,7 @@ app.use("/" , (req , res)=>{
   res.json({
     message:"working"
   })
-    )
+   })
 
 
 // Start the server
