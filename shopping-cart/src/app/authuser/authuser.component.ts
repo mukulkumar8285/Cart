@@ -20,7 +20,7 @@ userInfo = {
 constructor(private http :  HttpClient , private router : Router , private authService : AuthService) { }
 
 LoginClick(){
- const  LoginApi = "https://cart-angular.vercel.app/auth/login";
+ const  LoginApi = "http://localhost:3000/auth/login";
   this.http.post(LoginApi , this.userInfo).subscribe(
     (response : any)=>{
       console.log(response);

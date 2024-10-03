@@ -1,11 +1,11 @@
 <div class="container">
   <h1 class="text-center my-4">Shopping Cart</h1>
   <div class="under-container">
-    <div class="inner-container" style="background-color: azure;">
+    <div class="inner-container" style="background-color:white;">
       <ul class="list-group">
         <li *ngFor="let item of cartItems" class="list-item">
-          <div>
-            <img [src]="item.img" alt="{{ item.img }}" class="img-fluid mt-2" />
+          <div class="image-item">
+            <img [src]="item.img" alt="{{ item.img }}" class="img-fluid" />
           </div>
           <div class="item-details" >
             <strong>{{ truncateName(item.name) }}</strong>
@@ -22,7 +22,7 @@
       <div *ngIf="cartItems.length === 0" class="alert alert-warning text-center mt-4">
         Your cart is empty!
       </div>
-      <div *ngIf="cartItems.length > 0" class="text-end my-4 total-amount" style="background-color: azure;" >
+      <div *ngIf="cartItems.length > 0" class="text-end my-4 total-amount" style="background-color: white;" >
         <strong style="color:red; background-color:aqua; padding:5px">Total Amount: {{ getTotalAmout() }} USD</strong>
       </div>
     </div>

@@ -17,6 +17,28 @@
   border-bottom: 3px solid #ddd;
   transition: transform 0.2s; /* Animation effect */
 }
+/* .image-item{
+  width: 200px;
+  height: 280px;
+}
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+} */
+
+.image-item {
+  width: 240px;
+  height: 290px;
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* For potential absolute positioning */
+}
+
+.img-fluid {
+  max-width: 100%; /* Ensures the image scales down */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Adjusts how the image fits */
+}
 
 /* Scale the list item on hover */
 .list-item:hover {

@@ -23,7 +23,7 @@ export class CartComponent implements OnInit {
       return;
     }
     const UserId = user._id || user.id;
-    this.http.get<{ name: string; rate:number ,  qty: number }[]>(`https://cart-angular.vercel.app/api/items/cart?UserId=${UserId}`).subscribe(
+    this.http.get<{ name: string; rate:number ,  qty: number }[]>(`http://localhost:3000/api/items/cart?UserId=${UserId}`).subscribe(
       (response : any) => {
         this.cartItems = response;
       },(error) => {
@@ -40,7 +40,7 @@ export class CartComponent implements OnInit {
     }
     const UserId = user._id || user.id;
     console.log("UserId:", UserId);
-    this.http.post('https://cart-angular.vercel.app/api/items/add-to-cart', { name, rate, qty , UserId , img}).subscribe(
+    this.http.post('http://localhost:3000/api/items/add-to-cart', { name, rate, qty , UserId , img}).subscribe(
       (response) => {
         console.log('Item added to cart:', response);
         const existingItem = this.cartItems.find(item => item.name === name );
@@ -95,7 +95,7 @@ export class CartComponent implements OnInit {
     }
     const UserId = user._id || user.id; 
     console.log("UserId:", UserId);
-    this.http.post('https://cart-angular.vercel.app/api/items/sub-to-cart', { name, qty, UserId }).subscribe(
+    this.http.post('http://localhost:3000/api/items/sub-to-cart', { name, qty, UserId }).subscribe(
       (response) => {
         const existingItem = this.cartItems.find(item => item.name === name);
         if (existingItem) {

@@ -27,7 +27,7 @@ onAdd(){
 onLogout(){
     this.authservice.logout();
 
-    this.http.post("https://cart-angular.vercel.app/auth/logout", {}).subscribe(
+    this.http.post("http://localhost:3000/auth/logout", {}).subscribe(
       (response) => {
         console.log(response)
       },
