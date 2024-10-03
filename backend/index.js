@@ -22,6 +22,11 @@ mongoose.connect('mongodb+srv://mukulved07:sXXCXdeb5le04Zh2@cluster0.qxkhg.mongo
 // Routes
 app.use('/api/items', itemRoutes);
 app.use('/auth', router);
+app.use("/" , (req , res)=>{
+  res.json({
+    message:"working"
+  })
+    )
 
 
 // Start the server
