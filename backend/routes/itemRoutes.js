@@ -38,7 +38,7 @@ router.post('/add-to-cart', async (req, res) => {
   }
 
   try {
-    // Await the asynchronous findOne operation
+  
     let existingItem = await cart.findOne({ name, UserId });
 
     if (existingItem) {
