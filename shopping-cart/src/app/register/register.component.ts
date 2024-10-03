@@ -21,7 +21,7 @@ constructor(private http: HttpClient , private router : Router) {}
 
 
 register(){
-  this.http.post("http://localhost:3000/auth/register" , this.userInfo).subscribe(
+  this.http.post("https://cart-angular.vercel.app/auth/register" , this.userInfo).subscribe(
     (res) => {
       console.log(res);
       this.router.navigate(["login"]);

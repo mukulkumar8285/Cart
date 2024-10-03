@@ -20,7 +20,7 @@ export class ItemListComponent implements OnInit {
   constructor(private http : HttpClient  , private authService : AuthService) {}
 
   ngOnInit(): void {
-   this.http.get<any>("http://localhost:3000/api/items").subscribe(
+   this.http.get<any>("https://cart-angular.vercel.app/api/items").subscribe(
     (response) => {
       this.items = response;
       this.filterdata = response;
@@ -47,7 +47,7 @@ export class ItemListComponent implements OnInit {
 
 
     const qty = 1;
-    this.http.post(`http://localhost:3000/api/items/add-to-cart` ,  {name : item.name , rate : item.rate , qty , img : item.img , UserId}).subscribe(response => {
+    this.http.post(`https://cart-angular.vercel.app/api/items/add-to-cart` ,  {name : item.name , rate : item.rate , qty , img : item.img , UserId}).subscribe(response => {
       console.log('Item added to cart:', response);
       item.addedToCart = true;
     },
